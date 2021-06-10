@@ -42,7 +42,7 @@ header("HTTP/1.1 200 OK");
         exit();
     }
     $now = time();
-    $expIn = 5400;
+    $expIn = 31536000;
     $exp = $now + $expIn;
 
     $token = array(

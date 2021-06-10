@@ -3,7 +3,7 @@ namespace App;
 
 class SQLConnection{
     private $pdo;
-    private $host = "localhost";
+    private $host = "127.0.0.1";
     private $user = "root";
     private $database = "dhonidb";
     private $pwd= "";

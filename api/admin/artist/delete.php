@@ -33,10 +33,13 @@ use App\Artist;
             (isset($data->id) && !empty($data->id))
         )
     ){
+        
         http_response_code(400);
+
         echo json_encode(array(
             "error"=>"Delete unsuccessful! Try again!",
         ));
+
         exit();
     }
 

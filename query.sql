@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `dhonidb`
 --
-
+CREATE DATABASE IF NOT EXISTS `dhonidb`; USE `dhonidb`;
 -- --------------------------------------------------------
 
 --
