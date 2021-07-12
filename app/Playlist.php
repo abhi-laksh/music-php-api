@@ -216,13 +216,15 @@
         }
         
 
-        public function delete($user_id){
+        public function delete($playlist_id){
 
             $sql = 'DELETE FROM `playlists` 
-                    WHERE user_id=:user_id';
+                    WHERE id=:playlist_id';
 
             $query = $this->pdoconn->prepare($sql);
-            $query->bindValue(':user_id',$user_id);
+
+            $query->bindValue(':playlist_id', $playlist_id);
+
             $query->execute();
 
             return $query->rowCount() > 0;
